@@ -1,5 +1,5 @@
 defmodule KV.Bucket do
-  use Agent
+  use Agent, restart: :temporary
 
   @doc """
   Start a new bucket.
@@ -28,7 +28,7 @@ defmodule KV.Bucket do
   end
 
   # genserver functions
-  
+
   # def put(bucket, key, value) do
   #   # send server :put instruction
   #   GenServer.call(bucket, {:put, key, value})
