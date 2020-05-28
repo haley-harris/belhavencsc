@@ -1,0 +1,1 @@
+Chapter 6 exercises from Automate the Boring Stuff with Python
