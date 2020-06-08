@@ -1,10 +1,11 @@
 # Chapter 6: insecure password locker program
 
+import sys, pyperclip
+
 PASSWORDS = {'email': 'F7mip4SDX88DAsdf42jB586v',
              'blog': 'adleB6dRn78ld02lsnBCv',
              'luggage': '12345'}
 
-import sys, pyperclip
 if len(sys.argv) < 2:
     print('Usage: python pw.py [account] - copy account password.')
     sys.exit()
