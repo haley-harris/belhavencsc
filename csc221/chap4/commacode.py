@@ -2,7 +2,7 @@
 def addstructure(a_list):
 
     # converts list type to str
-    str_list = list(map(str, a_list))
+    str_list = [str(i) for i in a_list]
 
     # insert 'and' + a space before the last element in the given list
     str_list.insert(-1, 'and ')
