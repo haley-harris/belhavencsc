@@ -15,19 +15,18 @@ def sequence():
     '''
 
     try:
-        user_input = int(input('Enter number: '))
+        number = int(input('Enter number: '))
     
-        done = False
-        while user_input != 1:
-            user_input = collatz(user_input)
+        while number != 1:
+            number = collatz(number)
 
-            if 1:
-                done = True
+            if number == 1:
+                break
 
     except ValueError:
         # catches input errors (ie entering letters or symbols)
         # calls sequence function without breaking after print statement
-        print('Error: invalid argument')
+        print('Please enter a number')
         sequence()
                 
 sequence()
