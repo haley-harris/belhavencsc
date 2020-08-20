@@ -1,0 +1,13 @@
+1. relative path relates to the current working directory
+2. absolute path starts with the root directory (/) on OS X
+3. os.getcwd() - returns current working directory as a string
+   os.chdir() - changes current working directory 
+4. . = current working directory
+   .. = parent directory 
+5. directory name = C:/bacon/eggs
+   base name = spam.txt
+6. w (write), a (append), r (read)
+7. all text in file is deleted
+8. read() returns entire file as a string
+   readlines() returns a list of string values from file, one string for each new line
+9. dictionary structure with keys and values
