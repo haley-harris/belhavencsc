@@ -1,7 +1,7 @@
 # saves and loads pieces of text to clipboard
-# commands: py.exe mcb.pyw save <keyword> - saves clipboard to keyword
-#           py.exe mcb.pyw <keyword>      - loads keyword to clipboard
-#           py.exe mcb.pyw list           - loads all keywords to clipboard
+# commands: python3 mcb.pyw save <keyword> - saves clipboard to keyword
+#           python3 mcb.pyw <keyword>      - loads keyword to clipboard
+#           python3 mcb.pyw list           - loads all keywords to clipboard
 
 import shelve, pyperclip, sys
 
