@@ -25,6 +25,9 @@ if len(sys.argv) == 3 and sys.argv[1].lower() == 'delete':
         if keyword == sys.argv[2]:
             del(mcb_shelf[keyword])
 
-# TO-DO: delete entire list from shelf
+# deletes entire list from shelf
+if sys.argv[1].lower() == 'delete' and sys.argv[2].lower() == 'list':
+    for keyword in mcb_shelf.keys():
+        del(mcb_shelf[keyword])  
 
 mcb_shelf.close()
